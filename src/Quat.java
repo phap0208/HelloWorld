@@ -45,7 +45,20 @@ public class Quat {
                 ", quayNgang=" + quayNgang +
                 '}';
     }
-    void hienThi(){
+    void hienThi() {
         System.out.println(this);
     }
+        public static void main(String[] args) {
+            Quat LG1 = new Quat("LG", "VIETNAM", 2000, 10000);
+            Quat chinghai2 = new Quat("chinghai", "TRUNGQUOC", 3000, 20000);
+            LG1.hienThi();
+            chinghai2.hienThi();
+            LG1.bat();
+            chinghai2.tat();
+            LG1.chuyenSo(2);
+            chinghai2.chuyenSo(3);
+            LG1.chuyenTrangThaiQuay();
+            LG1.hienThi();
+    }
 }
+  
